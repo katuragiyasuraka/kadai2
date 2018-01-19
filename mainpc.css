@@ -1,0 +1,15 @@
+body{
+  background-color: rgb(215,230,240);
+  margin-top: 0;
+}
+header{
+width: 90%;
+}
+.mainContents{
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+}
+.changeLogo{
+  text-align: right;
+}
