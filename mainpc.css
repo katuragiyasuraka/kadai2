@@ -1,4 +1,6 @@
 body{
+  width: 1300px;
+  height: 4278px;
   background-color: rgb(215,230,240);
   margin-top: 0;
 }
@@ -6,10 +8,160 @@ header{
 width: 90%;
 }
 .mainContents{
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   background-color: white;
 }
 .changeLogo{
   text-align: right;
+  overflow: hidden;
+}
+.headerChar{
+  margin-left:30%;
+}
+.slideshow{
+  position: relative;
+}
+.slideshow p{
+  position: absolute;
+  width: 380px;
+  height: 80px;
+  top: 330px;
+  left: 580px;
+  border: solid 3px red;
+  border-radius:8px;
+  color: #FF0000;
+  text-align: center;
+  line-height: 80px;
+  background: white;/*背景色*/
+  font-size: 200%;
+}
+div.radios{
+  text-align: center;
+}
+.slide1{
+  margin-left: 5%;
+  margin-top: 20px;
+}
+div.japaneseName{
+  text-align: center;
+}
+img.kanauYume{
+  margin-right: 30px;
+}
+#changeBox{
+  width: 90%;
+  height: 200px;
+  margin-left: 5%;
+  background-color: rgb(215,230,240);
+  text-align: center;
+  border-radius: 8px;
+}
+#changeBox div.changeNow{
+  color: red;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+#changeBox input.textBox{
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  border: solid 1px black;
+  font-size: 30px;
+  opacity: 0.8;
+
+}
+#changeBox div.textBtn{
+  display: inline-block;
+  border-color: red;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  height:55px;
+  width: 100px;
+  line-height: 60px;
+  font-family: serif;
+  font-size: 20px;
+
+}
+h1 {
+    border-top: 4px solid #FF0000;
+    margin:0 auto;
+    text-align:center;
+    padding:0;
+    width: 90%;
+    height:24px;
+}
+
+h1 span {
+    position: relative;
+    top: -35px;
+    padding: 0 10px;
+    color: #FF0000;
+    font-size: 50px;
+    background:white;
+    height: 70px;
+}
+p.useStep{
+  text-align: center;
+  color: rgb(225,200,0);
+}
+div.stepsAll{
+  margin:0 auto;
+  width: 90%;
+}
+div.making>img{
+  margin-left: 15px;
+}
+.illust{
+  float: left;
+  overflow: hidden;
+}
+#makeBox{
+overflow: hidden;
+margin:30px 0 0 20px;
+width: 590px;
+height: 70px;
+background-color: #FF0000;
+border-radius: 8px;
+text-align: center;
+line-height: 70px;
+color: #FFFFFF;
+font-size: 200%;
+}
+ul.navi1{
+  width: 90%;
+  margin: 0;
+  overflow: hidden;
+}
+ul.navi1 li{
+  background-color: white;
+  text-align: center;
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  width: 320px;
+  height: 80px;
+  line-height: 85px;
+  color: #FF0000;
+  font-size: 200%;
+}
+ul.navi1 li:hover{
+background-color: red;
+color: white;
+}
+ul.navi1 li.active1{
+  border: solid 2px red;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ul.navi1 li.active2{
+border-top: solid 2px red;
+border-bottom: solid 2px red;
+}
+ul.navi1 li.active3{
+  border: solid 2px red;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 }
