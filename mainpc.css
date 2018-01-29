@@ -1,6 +1,6 @@
 body{
-  width: 1300px;
-  height: 4278px;
+  /* width: 1300px;
+  height: 4278px; */
   background-color: rgb(215,230,240);
   margin-top: 0;
 }
@@ -14,6 +14,7 @@ width: 90%;
 }
 .changeLogo{
   text-align: right;
+  padding-top: 20px;
   overflow: hidden;
 }
 .headerChar{
@@ -70,7 +71,6 @@ img.kanauYume{
   border: solid 1px black;
   font-size: 30px;
   opacity: 0.8;
-
 }
 #changeBox div.textBtn{
   display: inline-block;
@@ -83,7 +83,6 @@ img.kanauYume{
   line-height: 60px;
   font-family: serif;
   font-size: 20px;
-
 }
 h1 {
     border-top: 4px solid #FF0000;
@@ -93,7 +92,6 @@ h1 {
     width: 90%;
     height:24px;
 }
-
 h1 span {
     position: relative;
     top: -35px;
@@ -131,9 +129,10 @@ color: #FFFFFF;
 font-size: 200%;
 }
 ul.navi1{
-  width: 90%;
-  margin: 0;
+  width: 95%;
+  margin:0;
   overflow: hidden;
+  padding-left: 20px;
 }
 ul.navi1 li{
   background-color: white;
@@ -141,11 +140,11 @@ ul.navi1 li{
   float: right;
   list-style-type: none;
   margin-top: 50px;
-  width: 320px;
+  width: 340px;
   height: 80px;
   line-height: 85px;
   color: #FF0000;
-  font-size: 200%;
+  font-size: 180%;
 }
 ul.navi1 li:hover{
 background-color: red;
@@ -164,4 +163,84 @@ ul.navi1 li.active3{
   border: solid 2px red;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
+}
+div.slide2{
+  width: 90%;
+  height: 400px;
+  margin: 20px 0 0 5%;
+  display: inline-block;
+  background-image:url(imgspc/kind.png);
+  background-position: 689px 20px;
+  background-repeat: no-repeat;
+}
+img.leftTab{
+  display: inline;
+  vertical-align: 120px;
+  margin-right: 5px;
+}
+img.rightTab{
+  display: inline;
+  vertical-align: 120px;
+  margin-left: 260px;
+}
+div.poppUp{
+  width: 70%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+div.poppUp small{
+  font-size: small;
+  font-weight: normal;
+}
+h2{
+  width: 90%;
+  margin:0 5% 0 5%;
+}
+hr{
+  width: 90%;
+  margin: 0 5% 30px 5%;
+}
+div.info{
+  width: 70%;
+  margin: 0 10% 40px 8%;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 15px;
+}
+div.info a{
+  text-decoration: none;
+}
+div.info div{
+  padding-left:1em;
+text-indent:-1em;
+}
+div.info span{
+  padding-left:1em;
+text-indent:-1em;
+}
+div.footer{
+  width: 90%;
+  margin:50px 0 0 25%;
+}
+div.offer{
+  width: 70px;
+}
+div.footer div{
+  overflow: hidden;
+}
+div.footer div p{
+  float: left;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+div.footer img.serakuOffer{
+  margin-left: 120px;
+}
+div.footer div p.support{
+  margin-top: 40px;
+}
+div.footer img.tokyoSupport1{
+  margin-left: 70px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,6 @@
+[2018-01-19 12:21:15] layer "step1.png": Duplicate path: step1.png
+[2018-01-19 12:21:15] layer "step2.png": Duplicate path: step2.png
+[2018-01-19 12:21:15] layer "step3.png": Duplicate path: step3.png
+[2018-01-19 12:21:15] layer "text1.png": Duplicate path: text1.png
+[2018-01-19 12:21:15] layer "iOS7.x以降の実機": Expected end of input but "\u4EE5" found.
+[2018-01-19 12:21:14] layer "My Japanese Name.png": Duplicate path: My Japanese Name.png
