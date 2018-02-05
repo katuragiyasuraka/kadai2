@@ -2,13 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" media="(max-width: 480px)" href="style-480.css">
-    <link rel="stylesheet" href="mainpc.css" type="text/css">
-    <script src="main.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title></title>
+    <link rel="stylesheet" href="mainpc.css" type="text/css" >
+    <script src="main.js" type="text/javascript"></script>
   </head>
   <body>
+<div class="banners">
+  <div class="bannerContent">
+  <img class="banner" src="imgspc/henkan_off.png" alt="">
+  <div class="doChange"><b>変換する</b></div>
+</div>
+<div class="bannerContent">
+  <img class="banner" src="imgssp/tsukuru.png" alt="">
+  <div class="doSelect"><b>選ぶ</b></div>
+</div>
+<div class="bannerContent">
+  <img class="bannerSns" src="imgssp/facebook.jpg" alt="">
+  <img class="bannerSns" src="imgssp/twitter.jpg" alt="">
+  <img class="bannerSns" src="imgssp/insta.jpg" alt="">
+</div>
+</div>
+<img class="bannerHr" src="imgssp/hr.png" alt="">
     <div class="mainContents">
 <header class="headerLogo">
   <div class="changeLogo">
@@ -18,20 +33,24 @@
   <img class="headerChar" src="imgspc/logo.png" alt="ヘッダーロゴ">
 </header>
 <main>
-  <div class="slideshow">
-  <img class="slide1" src="imgspc/LP1.jpg" alt="スライド一番目">
-  <p class="slideBtn"><b>変換してみる！</p>
+<div class="graphic">
+  <ul>
+    <li class="now"><img class="image1" src="imgspc/LP1.jpg" alt=""></li>
+    <li><img class="image2" src="imgspc/LP2.jpg" alt=""></li>
+    <li><img class="image3" src="imgspc/LP3.jpg" alt=""></li>
+  </ul>
 </div>
   <br>
   <div class="radios">
-  <input type="radio"  class="radiobtn" checked>
-  <input type="radio"  class="radiobtn" checked>
-  <input type="radio"  class="radiobtn" checked>
+  <input type="radio"  class="radiobtn1">
+  <input type="radio"  class="radiobtn2">
+  <input type="radio"  class="radiobtn3">
 </div>
 <div class="japaneseName">
 <img class="japaneseNameLogo" src="imgspc/My Japanese Name eng.png">
+<img class="japaneseNameLogoSp" src="imgspc/My Japanese Name.png">
 <p>それぞれの漢字には、いろいろな意味があることを知っていますか。<br>
-  例えば、同じトムという名前でも感じにすると、たくさんのバリエーションがあり、<br>
+  例えば、同じトムという名前でも漢字にすると、たくさんのバリエーションがあり、<br>
   それぞれ意味が違っています。<p>
     <img class="kanauYume" src="imgspc/tom1.png">
     <img class="noboruAyumu" src="imgspc/tom2.png">
@@ -46,14 +65,14 @@
 <br>
 <br>
 <h1><span>STEPS</span></h1>
-<p class="useStep">ご利用ステップ</p>
+<p class="useStep"><b>ご利用ステップ</b></p>
 <br>
 <div class="stepsAll">
 <img class="illust" src="imgspc/illust.png">
 <div class="making">
-  <img class="step1" src="imgspc/step1.png">
-  <img class="step2" src="imgspc/step2.png">
-  <img class="step3" src="imgspc/step3.png">
+  <img class="step1" src="imgspc/step1.png" alt="">
+  <img class="step2" src="imgspc/step2.png" alt="">
+  <img class="step3" src="imgspc/step3.png" alt="">
   <div id="makeBox">作ってみる</div>
 </div>
 </div>
@@ -72,7 +91,7 @@
   </div>
   <br>
   <h1><span>OPEN!</span></h1>
-  <p class="useStep">お店オープン!</p>
+  <p class="useStep"><b>お店オープン!</b></p>
   <br>
   <div class="poppUp">
 <img class="popLogo1" src="imgspc/open1.png" alt="ポップロゴ１">
@@ -87,10 +106,10 @@
   </div>
   <br>
   <h1><span>SERVICE</span></h1>
-  <p class="useStep">サービス詳細</p>
+  <p class="useStep"><b>サービス詳細</b></p>
   <br>
 <h2>■お届き期間</h2>
-<hr>
+<hr class="infoHr">
 <div class="info">
   <p>商品により異なります。
   <br>詳しくは、商品ページ内のお届け期間をご参照ください。
@@ -103,7 +122,7 @@
 </div>
 </div>
 <h2>■お支払い</h2>
-<hr>
+<hr class="infoHr">
 <div class="info">
 <ul>
   <li>現金(※1)</li>
@@ -113,7 +132,7 @@
 <img class="taxFree" src="imgspc/taxfree.jpg">
 </div>
 <h2>■配送料</h2>
-<hr>
+<hr class="infoHr">
 <div class="info">
   <p>￥900 + 消費税
   <br>￥10.000以上お買上げで配送料無料
@@ -121,20 +140,24 @@
 <div>※1 ポップアップショップのみ現金でお支払いが可能です。</div>
 <div>※2 クレジットカード決済にかかる手数料は弊社が負担します。
 <br><span>クレジットカード会社による締切日および引落日が異なるのでご注意ください。</span>
-<br><span>ご注文者様ご本人名義のクレジットカードのみのお取り扱いとさせていただきます。</span></div>
+<br><span>ご注文者様ご本人名義のクレジットカードのみのお取り扱いとさせていただきます。</span></span>
+</div>
 </div>
 </main>
 <div class="footer">
-  <div>
+  <div class="offers">
     <p class="offer">提供</p>
     <img class="serakuOffer" src="imgspc/seraku.jpg">
   </div>
-  <div>
+  <div class="supports">
     <p class="support">協賛</p>
     <img class="tokyoSupport1" src="imgspc/tokyo.jpg">
     <img class="tokyoSupport2" src="imgspc/emblem.jpg">
   </div>
-
+<ul class="footerInfo">
+  <li class="footerAdress">お問合せ</li>
+  <li class="footerQuestions">よくある質問</li>
+</ul>
 </div>
   </body>
 </html>

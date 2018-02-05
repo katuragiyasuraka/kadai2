@@ -1,51 +1,85 @@
 body{
-  /* width: 1300px;
-  height: 4278px; */
   background-color: rgb(215,230,240);
-  margin-top: 0;
+  margin: 0;
+}
+.banners{
+  float:right;
+  top:200px;
+  right:35px;
+  width: 80px;
+  position: fixed;
+}
+.bannerHr{
+  display: none;
+}
+.doChange{
+  margin: 0;
+  font-size: 95%;
+}
+.doSelect{
+  margin: 0;
+  font-size: 95%;
 }
 header{
 width: 90%;
 }
 .mainContents{
   width: 85%;
-  margin: 0 auto;
   background-color: white;
+  position: relative;
+  display: inline-block;
+  left:6%;
+  margin-right: 0;
 }
 .changeLogo{
   text-align: right;
   padding-top: 20px;
-  overflow: hidden;
 }
 .headerChar{
   margin-left:30%;
 }
-.slideshow{
-  position: relative;
+div.graphic{
+  width: 950px;
+  margin:0 auto;
 }
-.slideshow p{
-  position: absolute;
-  width: 380px;
-  height: 80px;
-  top: 330px;
-  left: 580px;
-  border: solid 3px red;
-  border-radius:8px;
-  color: #FF0000;
-  text-align: center;
-  line-height: 80px;
-  background: white;/*背景色*/
-  font-size: 200%;
+div.graphic ul{
+  margin-bottom: 0;
+  position: relative;
+	list-style: none;
+	padding-left: 0;
+}
+div.graphic ul li{
+  list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+div.graphic ul li.now{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 1;
+}
+div.graphic ul li img{
+  width: 950px;
+
 }
 div.radios{
   text-align: center;
 }
-.slide1{
-  margin-left: 5%;
-  margin-top: 20px;
+input[type=radio]{
+  color: red;
 }
 div.japaneseName{
   text-align: center;
+  margin: 0 auto;
+}
+img.japaneseNameLogoSp{
+  display: none;
 }
 img.kanauYume{
   margin-right: 30px;
@@ -99,10 +133,12 @@ h1 span {
     color: #FF0000;
     font-size: 50px;
     background:white;
-    height: 70px;
 }
 p.useStep{
+  position: relative;
+  top:-20px;
   text-align: center;
+  margin-top: 15px;
   color: rgb(225,200,0);
 }
 div.stepsAll{
@@ -196,7 +232,7 @@ h2{
   width: 90%;
   margin:0 5% 0 5%;
 }
-hr{
+hr.infoHr{
   width: 90%;
   margin: 0 5% 30px 5%;
 }
@@ -219,14 +255,27 @@ div.info span{
 text-indent:-1em;
 }
 div.footer{
-  width: 90%;
-  margin:50px 0 0 25%;
+  display: inline-block;
+  width: 70%;
+  margin:0;
+  position: relative;
+  left: 30%;
 }
 div.offer{
   width: 70px;
 }
 div.footer div{
   overflow: hidden;
+}
+div.footer div.offers{
+  width: 500px;
+  margin: 0;
+  display: inline-block;
+}
+div.footer div.supports{
+  width: 550px;
+  margin: 0;
+  display: inline-block;
 }
 div.footer div p{
   float: left;
@@ -243,4 +292,243 @@ div.footer div p.support{
 div.footer img.tokyoSupport1{
   margin-left: 70px;
   margin-bottom: 20px;
+}
+ul.footerInfo{
+  display: none;
+}
+
+@media (max-width:599px) {
+  .mainContents{
+    width: 100%;
+    left:0;
+  }
+  .banners{
+    width: 90%;
+    overflow: hidden;
+  }
+  .banners div.bannerContent{
+    display: inline-block;
+    padding-right: 30px;
+    position: static;
+    float: left;
+  }
+  .banners div.bannerContent img{
+    width:60px;
+  }
+  .banners div.bannerContent img.bannerSns{
+    padding-right: 30px;
+  }
+  .bannerHr{
+  	width: 100%;
+  }
+  .doChange{
+    margin: 0;
+    font-size: 95%;
+  }
+  .doSelect{
+    margin: 0;
+    font-size: 95%;
+  }
+  div.changeLogo{
+    display: inline-block;
+    width: 150px;
+    margin:0;
+    position: relative;
+    left: 80%;
+    top: -10px;
+  }
+  div.changeLogo img{
+    width: 70px;
+  }
+
+  div.graphic{
+    width: 950px;
+    margin:0 auto;
+  }
+  div.graphic ul{
+    margin-bottom: 0;
+    position: relative;
+  	list-style: none;
+  	padding-left: 0;
+  }
+  div.graphic ul li{
+    list-style-type: none;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 0;
+  	opacity: 0;
+  	transition: opacity 1s ease;
+  }
+  div.graphic ul li.now{
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	opacity: 1;
+  }
+  div.graphic ul li img{
+    width: 950px;
+  }
+  div.radios{
+    text-align: center;
+  }
+  div.japaneseName{
+    text-align: center;
+    margin: 0 auto;
+  }
+  img.japaneseNameLogo{
+    display: none;
+  }
+  img.kanauYume{
+    margin-right: 30px;
+  }
+  #changeBox{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(215,230,240);
+    text-align: center;
+    border-radius: 8px;
+  }
+  #changeBox div.changeNow{
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  #changeBox input.textBox{
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 1px black;
+    font-size: 30px;
+    opacity: 0.8;
+  }
+  #changeBox div.textBtn{
+    display: inline-block;
+    border-color: red;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    height:55px;
+    width: 100px;
+    line-height: 60px;
+    font-family: serif;
+    font-size: 20px;
+  }
+  h1 {
+      border-top: 4px solid #FF0000;
+      margin:0 auto;
+      text-align:center;
+      padding:0;
+      height:24px;
+  }
+  h1 span {
+      position: relative;
+      top: -35px;
+      padding: 0 10px;
+      color: #FF0000;
+      font-size: 50px;
+      background:white;
+  }
+  p.useStep{
+    position: relative;
+    top:-20px;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(225,200,0);
+  }
+  div.poppUp{
+    width: 100%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  div.poppUp small{
+    font-size: small;
+  }
+  h2{
+    width: 100%;
+    margin:0 5% 0 0;
+  }
+  hr.infoHr{
+    width: 100%;
+    margin: 0;
+  }
+  div.info{
+    width: 100%;
+    margin: 0 10% 40px 0;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  div.info a{
+    text-decoration: none;
+  }
+  div.info div{
+    padding-left:1em;
+  text-indent:-1em;
+  }
+  div.info span{
+    padding-left:1em;
+  text-indent:-1em;
+  }
+  div.footer{
+    display: inline-block;
+    width: 70%;
+    margin:0;
+    position: relative;
+    left: 30%;
+  }
+  div.offer{
+    width: 70px;
+  }
+  div.footer div{
+    overflow: hidden;
+  }
+  div.footer div.offers{
+    width: 500px;
+    margin: 0;
+    display: inline-block;
+  }
+  div.footer div.supports{
+    width: 550px;
+    margin: 0;
+    display: inline-block;
+  }
+  div.footer div p{
+    float: left;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  div.footer img.serakuOffer{
+    margin-left: 120px;
+  }
+  div.footer div p.support{
+    margin-top: 40px;
+  }
+  div.footer img.tokyoSupport1{
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+  ul.footerInfo{
+    overflow: hidden;
+    margin: 40px 0 40px 0;
+  }
+  ul.footerInfo li{
+    font-size: 20px;
+    float: left;
+    list-style-type: none;
+    width: 120px;
+  }
+  ul.footerInfo li.footerAdress{
+    text-decoration: underline;
+    border-right:  solid 1px black;
+  }
+  ul.footerInfo li.footerQuestions{
+    border-right:  solid 1px black;
+    text-decoration: underline;
+    padding: 0 30px 0px;
+  }
 }
