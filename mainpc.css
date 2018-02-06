@@ -1,12 +1,13 @@
+/* banner ====================================== ============= */
 body{
   background-color: rgb(215,230,240);
   margin: 0;
 }
 .banners{
+  width: 80px;
   float:right;
   top:200px;
   right:35px;
-  width: 80px;
   position: fixed;
 }
 .bannerHr{
@@ -20,10 +21,49 @@ body{
   margin: 0;
   font-size: 95%;
 }
-header{
-width: 90%;
+@media (max-width:599px) {
+  body{
+    background-color: white;
+    margin: 0;
+  }
+  .banners{
+    width: 100%;
+    float: none;
+    top:auto;
+    right: auto;
+    position:relative;
+    overflow: hidden;
+    background-color: white;
+  }
+  .bannerHr{
+    display: block;
+  	width: 100%;
+  }
+  .doChange{
+    margin: 0;
+    font-size: 10%;
+  }
+  .doSelect{
+    margin: 0;
+    font-size: 30%;
+  }
+  .banners div.bannerContent{
+    /* display: inline-block;
+    padding-right:1%;
+    position: static;
+    height: 100%; */
+    float:left;
+  }
+  .banners div.bannerContent img{
+    width:15%;
+  }
+  .banners div.bannerContent img.bannerSns{
+    padding-right:5%;
+  }
 }
-.mainContents{
+
+/* header ====================================== ============= */
+header{
   width: 85%;
   background-color: white;
   position: relative;
@@ -37,6 +77,43 @@ width: 90%;
 }
 .headerChar{
   margin-left:30%;
+}
+@media (max-width:599px) {
+  header{
+  width: 100%;
+  left:0;
+  margin: 0;
+  background-color: white;
+
+  }
+  div.changeLogo{
+    padding: 0;
+    text-align: justify;
+    display: inline-block;
+    width: 30%;
+    margin:0;
+    position: relative;
+    left: 70%;
+  }
+  div.changeLogo img{
+    width: 40px;
+  }
+  img.headerChar{
+    margin: 0;
+    width: 65%;
+    position: relative;
+    right:27%;
+  }
+}
+
+/* graphic ====================================== ============= */
+.mainContents{
+  width: 85%;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  left:6%;
+  margin-right: 0;
 }
 div.graphic{
   width: 950px;
@@ -66,7 +143,6 @@ div.graphic ul li.now{
 }
 div.graphic ul li img{
   width: 950px;
-
 }
 div.radios{
   text-align: center;
@@ -74,6 +150,27 @@ div.radios{
 input[type=radio]{
   color: red;
 }
+@media (max-width:599px) {
+  .mainContents{
+    width: 100%;
+    left:0;
+    margin: 0;
+  }
+  div.graphic{
+    width: 100%;
+    margin: 0;
+  }
+  div.graphic ul li img{
+    width: 100%;
+  }
+  div.radios{
+
+    text-align: center;
+  }
+}
+
+/* My japaneseName ====================================== ============= */
+
 div.japaneseName{
   text-align: center;
   margin: 0 auto;
@@ -81,9 +178,7 @@ div.japaneseName{
 img.japaneseNameLogoSp{
   display: none;
 }
-img.kanauYume{
-  margin-right: 30px;
-}
+
 #changeBox{
   width: 90%;
   height: 200px;
@@ -118,6 +213,53 @@ img.kanauYume{
   font-family: serif;
   font-size: 20px;
 }
+@media (max-width:599px) {
+div.japaneseName{
+  width: 100%;
+  margin: 0 auto;
+}
+  img.japaneseNameLogo{
+    display: none;
+  }
+  img.japaneseNameLogoSp{
+    width: 90%;
+    display: block;
+    margin:0 auto;
+  }
+   img.noboruAyumu{
+    width: 30%;
+  }
+  img.kanauYume{
+    width: 40%;
+  }
+  #changeBox{
+    width: 100%;
+    height: 200px;
+    margin-left: 0%;
+    border-radius: 0px;
+  }
+  #changeBox div.changeNow{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  #changeBox input.textBox{
+    width: 60%;
+    height: 50px;
+    font-size: 30px;
+  }
+  #changeBox div.textBtn{
+    display: inline-block;
+    border-radius: 10px;
+    height:55px;
+    width: 100px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+}
+
+/* STEPS====================================== ============= */
 h1 {
     border-top: 4px solid #FF0000;
     margin:0 auto;
@@ -143,7 +285,7 @@ p.useStep{
 }
 div.stepsAll{
   margin:0 auto;
-  width: 90%;
+  width: 95%;
 }
 div.making>img{
   margin-left: 15px;
@@ -217,8 +359,88 @@ img.leftTab{
 img.rightTab{
   display: inline;
   vertical-align: 120px;
-  margin-left: 260px;
+  margin-left: 245px;
 }
+
+@media (max-width:599px) {
+  h1 {
+    width: 100%;
+  }
+  div.stepsAll{
+    margin:0;
+    width: 100%;
+  }
+  p.useStep{
+    margin-bottom: 0;
+  }
+  div.making>img{
+    width: 30%;
+    margin-left:2%;
+  }
+  .illust{
+    float: left;
+    overflow: hidden;
+    display: none;
+  }
+
+  #makeBox{
+    margin:0 auto;
+    width: 95%;
+    border-radius: 8px;
+    font-size: 150%;
+  }
+  ul.navi1{
+    width: 90%;
+    margin:0;
+    overflow: hidden;
+    padding-left: 0;
+  }
+  ul.navi1 li{
+    margin-top: 0;
+    width: 30%;
+    height: 80px;
+    font-size: 100%;
+  }
+  ul.navi1 li:hover{
+  background-color: red;
+  color: white;
+  }
+  ul.navi1 li.active1{
+    border: solid 2px red;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+  ul.navi1 li.active2{
+  border-top: solid 2px red;
+  border-bottom: solid 2px red;
+  }
+  ul.navi1 li.active3{
+    border: solid 2px red;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:0;
+  }
+  div.slide2{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 15%;
+  }
+  img.kindbox{
+    width: 75%;
+    vertical-align: middle;
+  }
+  img.leftTab{
+    width: 5%;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  img.rightTab{
+    width: 5%;
+    vertical-align: middle;
+    margin: 0;
+  }
+}
+
+/* OPEN SERVICE====================================== ============= */
 div.poppUp{
   width: 70%;
   margin: 0 auto 50px auto;
@@ -254,6 +476,48 @@ div.info span{
   padding-left:1em;
 text-indent:-1em;
 }
+
+@media (max-width:599px) {
+  img.popLogo2{
+    width: 90%;
+    text-align: center;
+  }
+  div.poppUp{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  h2{
+    width: 90%;
+    margin:0 5% 0 5%;
+  }
+  hr.infoHr{
+    width: 100%;
+    margin: 0;
+  }
+  div.info{
+  word-break: break-all;
+    width: 100%;
+    margin-left:5%;
+    font-weight: lighter;
+    font-size: 70%;;
+    line-height: 15px;
+  }
+  div.info a{
+    text-decoration: none;
+  }
+  div.info div{
+    padding-left:1em;
+    text-indent:-1em;
+    word-break: break-all;
+  }
+  div.info span{
+    padding-left:1em;
+    text-indent:-1em;
+  }
+}
+
+/* footer====================================== ============= */
 div.footer{
   display: inline-block;
   width: 70%;
@@ -281,7 +545,7 @@ div.footer div p{
   float: left;
   font-size: 25px;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 div.footer img.serakuOffer{
   margin-left: 120px;
@@ -298,237 +562,54 @@ ul.footerInfo{
 }
 
 @media (max-width:599px) {
-  .mainContents{
-    width: 100%;
-    left:0;
-  }
-  .banners{
-    width: 90%;
-    overflow: hidden;
-  }
-  .banners div.bannerContent{
-    display: inline-block;
-    padding-right: 30px;
-    position: static;
-    float: left;
-  }
-  .banners div.bannerContent img{
-    width:60px;
-  }
-  .banners div.bannerContent img.bannerSns{
-    padding-right: 30px;
-  }
-  .bannerHr{
-  	width: 100%;
-  }
-  .doChange{
-    margin: 0;
-    font-size: 95%;
-  }
-  .doSelect{
-    margin: 0;
-    font-size: 95%;
-  }
-  div.changeLogo{
-    display: inline-block;
-    width: 150px;
-    margin:0;
-    position: relative;
-    left: 80%;
-    top: -10px;
-  }
-  div.changeLogo img{
-    width: 70px;
-  }
-
-  div.graphic{
-    width: 950px;
-    margin:0 auto;
-  }
-  div.graphic ul{
-    margin-bottom: 0;
-    position: relative;
-  	list-style: none;
-  	padding-left: 0;
-  }
-  div.graphic ul li{
-    list-style-type: none;
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	z-index: 0;
-  	opacity: 0;
-  	transition: opacity 1s ease;
-  }
-  div.graphic ul li.now{
-  	position: relative;
-  	top: 0;
-  	left: 0;
-  	z-index: 1;
-  	opacity: 1;
-  }
-  div.graphic ul li img{
-    width: 950px;
-  }
-  div.radios{
-    text-align: center;
-  }
-  div.japaneseName{
-    text-align: center;
-    margin: 0 auto;
-  }
-  img.japaneseNameLogo{
-    display: none;
-  }
-  img.kanauYume{
-    margin-right: 30px;
-  }
-  #changeBox{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(215,230,240);
-    text-align: center;
-    border-radius: 8px;
-  }
-  #changeBox div.changeNow{
-    color: red;
-    font-size: 30px;
-    line-height: 30px;
-    padding-top: 30px;
-  }
-  #changeBox input.textBox{
-    width: 300px;
-    height: 50px;
-    border-radius: 8px;
-    border: solid 1px black;
-    font-size: 30px;
-    opacity: 0.8;
-  }
-  #changeBox div.textBtn{
-    display: inline-block;
-    border-color: red;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    height:55px;
-    width: 100px;
-    line-height: 60px;
-    font-family: serif;
-    font-size: 20px;
-  }
-  h1 {
-      border-top: 4px solid #FF0000;
-      margin:0 auto;
-      text-align:center;
-      padding:0;
-      height:24px;
-  }
-  h1 span {
-      position: relative;
-      top: -35px;
-      padding: 0 10px;
-      color: #FF0000;
-      font-size: 50px;
-      background:white;
-  }
-  p.useStep{
-    position: relative;
-    top:-20px;
-    text-align: center;
-    margin-top: 15px;
-    color: rgb(225,200,0);
-  }
-  div.poppUp{
-    width: 100%;
-    margin: 0 auto 50px auto;
-    text-align: center;
-    font-weight: bold;
-  }
-  div.poppUp small{
-    font-size: small;
-  }
-  h2{
-    width: 100%;
-    margin:0 5% 0 0;
-  }
-  hr.infoHr{
-    width: 100%;
-    margin: 0;
-  }
-  div.info{
-    width: 100%;
-    margin: 0 10% 40px 0;
-    font-weight: lighter;
-    font-size: 15px;
-    line-height: 15px;
-  }
-  div.info a{
-    text-decoration: none;
-  }
-  div.info div{
-    padding-left:1em;
-  text-indent:-1em;
-  }
-  div.info span{
-    padding-left:1em;
-  text-indent:-1em;
-  }
   div.footer{
     display: inline-block;
-    width: 70%;
+    width: 100%;
     margin:0;
     position: relative;
-    left: 30%;
+    left:0;
   }
   div.offer{
-    width: 70px;
+    width:40%;
   }
   div.footer div{
     overflow: hidden;
   }
   div.footer div.offers{
-    width: 500px;
+    width:40%;
     margin: 0;
     display: inline-block;
   }
   div.footer div.supports{
-    width: 550px;
+    width: 40%;
     margin: 0;
     display: inline-block;
   }
   div.footer div p{
     float: left;
-    font-size: 25px;
+    font-size: 90%;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   div.footer img.serakuOffer{
-    margin-left: 120px;
+    width: 10%;
+    height: 10%;
+    margin-left: 0;
   }
   div.footer div p.support{
-    margin-top: 40px;
+    margin-top: 0;
   }
   div.footer img.tokyoSupport1{
-    margin-left: 70px;
-    margin-bottom: 20px;
+    width: 10%;
+    height: 10%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  div.footer img.tokyoSupport2{
+    width: 10%;
+    height: 10%;
   }
   ul.footerInfo{
-    overflow: hidden;
-    margin: 40px 0 40px 0;
-  }
-  ul.footerInfo li{
-    font-size: 20px;
-    float: left;
-    list-style-type: none;
-    width: 120px;
-  }
-  ul.footerInfo li.footerAdress{
-    text-decoration: underline;
-    border-right:  solid 1px black;
-  }
-  ul.footerInfo li.footerQuestions{
-    border-right:  solid 1px black;
-    text-decoration: underline;
-    padding: 0 30px 0px;
+    display: block;
   }
 }
