@@ -1,5 +1,6 @@
 /* banner ====================================== ============= */
 body{
+  width: 100%;
   background-color: rgb(215,230,240);
   margin: 0;
 }
@@ -15,22 +16,22 @@ body{
 }
 .doChange{
   margin: 0;
-  font-size: 95%;
+  font-size: 100%;
 }
 .doSelect{
   margin: 0;
-  font-size: 95%;
+  font-size: 100%;
 }
 @media (max-width:599px) {
   body{
     background-color: white;
-    margin: 0;
   }
   .banners{
     width: 100%;
     float: none;
     top:auto;
     right: auto;
+    margin:2% 0 0 2%;
     position:relative;
     overflow: hidden;
     background-color: white;
@@ -40,29 +41,36 @@ body{
   	width: 100%;
   }
   .doChange{
-    margin: 0;
     font-size: 10%;
+    color: red;
+    position: relative;
+    bottom:5px;
   }
   .doSelect{
-    margin: 0;
     font-size: 30%;
+    color: red;
+    position: relative;
+    left: 10px;
+    bottom:5px;
   }
   .banners div.bannerContent{
-    /* display: inline-block;
+    display: inline-block;
     padding-right:1%;
     position: static;
-    height: 100%; */
     float:left;
   }
+  .banners div.bannerContent:last-child{
+    width: 160px;
+  }
   .banners div.bannerContent img{
-    width:15%;
+    width:40px;
   }
   .banners div.bannerContent img.bannerSns{
     padding-right:5%;
   }
 }
-
 /* header ====================================== ============= */
+
 header{
   width: 85%;
   background-color: white;
@@ -73,18 +81,17 @@ header{
 }
 .changeLogo{
   text-align: right;
-  padding-top: 20px;
+  padding: 20px 50px 0 0;
 }
 .headerChar{
   margin-left:30%;
 }
 @media (max-width:599px) {
   header{
-  width: 100%;
-  left:0;
-  margin: 0;
-  background-color: white;
-
+    width: 100%;
+    left:0;
+    margin: 0;
+    background-color: white;
   }
   div.changeLogo{
     padding: 0;
@@ -107,6 +114,7 @@ header{
 }
 
 /* graphic ====================================== ============= */
+
 .mainContents{
   width: 85%;
   background-color: white;
@@ -147,9 +155,6 @@ div.graphic ul li img{
 div.radios{
   text-align: center;
 }
-input[type=radio]{
-  color: red;
-}
 @media (max-width:599px) {
   .mainContents{
     width: 100%;
@@ -164,7 +169,6 @@ input[type=radio]{
     width: 100%;
   }
   div.radios{
-
     text-align: center;
   }
 }
@@ -178,7 +182,12 @@ div.japaneseName{
 img.japaneseNameLogoSp{
   display: none;
 }
-
+br.brSp{
+  display: none;
+}
+div.japaneseName p{
+  font-size: 130%;
+}
 #changeBox{
   width: 90%;
   height: 200px;
@@ -189,6 +198,7 @@ img.japaneseNameLogoSp{
 }
 #changeBox div.changeNow{
   color: red;
+  font-weight: bold;
   font-size: 30px;
   line-height: 30px;
   padding-top: 30px;
@@ -213,20 +223,29 @@ img.japaneseNameLogoSp{
   font-family: serif;
   font-size: 20px;
 }
-@media (max-width:599px) {
-div.japaneseName{
-  width: 100%;
-  margin: 0 auto;
+img.noboruAyumu{
+  margin-left: 5%;
 }
+@media (max-width:599px) {
+  div.japaneseName{
+    width: 100%;
+  }
+  br.brSp{
+    display: block;
+  }
   img.japaneseNameLogo{
     display: none;
+  }
+  div.japaneseName p{
+    font-size: 100%;
   }
   img.japaneseNameLogoSp{
     width: 90%;
     display: block;
     margin:0 auto;
   }
-   img.noboruAyumu{
+  img.noboruAyumu{
+    margin-left: 5%;
     width: 30%;
   }
   img.kanauYume{
@@ -234,47 +253,41 @@ div.japaneseName{
   }
   #changeBox{
     width: 100%;
-    height: 200px;
+    height: 140px;
     margin-left: 0%;
     border-radius: 0px;
   }
-  #changeBox div.changeNow{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-    padding-top: 30px;
-  }
   #changeBox input.textBox{
-    width: 60%;
-    height: 50px;
-    font-size: 30px;
+    width: 50%;
+    height: 50%;
   }
   #changeBox div.textBtn{
-    display: inline-block;
-    border-radius: 10px;
-    height:55px;
-    width: 100px;
-    line-height: 60px;
+    height:40px;
+    line-height: 50px;
     font-size: 20px;
   }
+  #changeBox div.positioning{
+    position: relative;
+    bottom: 5%;
+  }
 }
-
 /* STEPS====================================== ============= */
+
 h1 {
-    border-top: 4px solid #FF0000;
-    margin:0 auto;
-    text-align:center;
-    padding:0;
-    width: 90%;
-    height:24px;
+  border-top: 4px solid #FF0000;
+  margin:0 auto;
+  text-align:center;
+  padding:0;
+  width: 90%;
+  height:24px;
 }
 h1 span {
-    position: relative;
-    top: -35px;
-    padding: 0 10px;
-    color: #FF0000;
-    font-size: 50px;
-    background:white;
+  position: relative;
+  top: -35px;
+  padding: 0 10px;
+  color: #FF0000;
+  font-size: 50px;
+  background:white;
 }
 p.useStep{
   position: relative;
@@ -295,16 +308,16 @@ div.making>img{
   overflow: hidden;
 }
 #makeBox{
-overflow: hidden;
-margin:30px 0 0 20px;
-width: 590px;
-height: 70px;
-background-color: #FF0000;
-border-radius: 8px;
-text-align: center;
-line-height: 70px;
-color: #FFFFFF;
-font-size: 200%;
+  overflow: hidden;
+  margin:30px 0 0 20px;
+  width: 590px;
+  height: 70px;
+  background-color: #FF0000;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 70px;
+  color: #FFFFFF;
+  font-size: 200%;
 }
 ul.navi1{
   width: 95%;
@@ -321,12 +334,13 @@ ul.navi1 li{
   width: 340px;
   height: 80px;
   line-height: 85px;
+  font-weight: bold;
   color: #FF0000;
   font-size: 180%;
 }
 ul.navi1 li:hover{
-background-color: red;
-color: white;
+  background-color: red;
+  color: white;
 }
 ul.navi1 li.active1{
   border: solid 2px red;
@@ -334,13 +348,13 @@ ul.navi1 li.active1{
   border-bottom-right-radius: 10px;
 }
 ul.navi1 li.active2{
-border-top: solid 2px red;
-border-bottom: solid 2px red;
+  border-top: solid 2px red;
+  border-bottom: solid 2px red;
 }
 ul.navi1 li.active3{
   border: solid 2px red;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 div.slide2{
   width: 90%;
@@ -361,90 +375,102 @@ img.rightTab{
   vertical-align: 120px;
   margin-left: 245px;
 }
-
+p.spSelectImage{
+  display: none;
+}
 @media (max-width:599px) {
   h1 {
     width: 100%;
   }
+  h1 span {
+    top: -27px;
+    padding: 0 10px;
+    color: #FF0000;
+    font-size: 40px;
+  }
   div.stepsAll{
     margin:0;
     width: 100%;
+    position: relative;
+    bottom: 10px;
   }
   p.useStep{
     margin-bottom: 0;
   }
   div.making>img{
     width: 30%;
-    margin-left:2%;
+    margin-left:1%;
   }
   .illust{
-    float: left;
-    overflow: hidden;
     display: none;
   }
-
   #makeBox{
     margin:0 auto;
     width: 95%;
-    border-radius: 8px;
-    font-size: 150%;
+    font-size: 140%;
+  }
+  div.positioning2{
+    position: relative;
+    right: 5%;
   }
   ul.navi1{
-    width: 90%;
-    margin:0;
-    overflow: hidden;
+    width: 100%;
     padding-left: 0;
   }
   ul.navi1 li{
     margin-top: 0;
     width: 30%;
-    height: 80px;
     font-size: 100%;
   }
-  ul.navi1 li:hover{
-  background-color: red;
-  color: white;
-  }
   ul.navi1 li.active1{
-    border: solid 2px red;
-    border-top-right-radius: 10px;
     border-bottom-right-radius: 0;
   }
-  ul.navi1 li.active2{
-  border-top: solid 2px red;
-  border-bottom: solid 2px red;
-  }
   ul.navi1 li.active3{
-    border: solid 2px red;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius:0;
+    border-bottom-left-radius:0;
   }
   div.slide2{
     width: 100%;
     height: 10%;
-    margin-bottom: 15%;
+    margin:0 auto;
+    position: relative;
+    left: 2%;
   }
   img.kindbox{
-    width: 75%;
+    width: 80%;
     vertical-align: middle;
   }
   img.leftTab{
     width: 5%;
     vertical-align: middle;
-    margin-right: 5px;
   }
   img.rightTab{
     width: 5%;
     vertical-align: middle;
     margin: 0;
   }
+  p.spSelectImage{
+    display: inline-block;
+    font-size: 110%;
+    margin:0 5% 10% 15%;
+    text-align: center;
+  }
 }
-
 /* OPEN SERVICE====================================== ============= */
+
+div.positioning3{
+  position: relative;
+  bottom: 30px;
+}
 div.poppUp{
   width: 70%;
   margin: 0 auto 50px auto;
   text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+div.poppUp p{
+  width: 100%;
+  font-size: 120%;
 }
 div.poppUp small{
   font-size: small;
@@ -462,154 +488,153 @@ div.info{
   width: 70%;
   margin: 0 10% 40px 8%;
   font-weight: lighter;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 110%;
 }
 div.info a{
   text-decoration: none;
 }
 div.info div{
   padding-left:1em;
-text-indent:-1em;
+  text-indent:-1em;
 }
 div.info span{
   padding-left:1em;
-text-indent:-1em;
+  text-indent:-1em;
 }
-
+span.brSpan{
+  display: none;
+}
 @media (max-width:599px) {
+  img.popLogo1{
+    width: 20%;
+    text-align: center;
+  }
   img.popLogo2{
-    width: 90%;
+    width: 80%;
+    text-align: center;
+  }
+  img.popLogo3{
+    width: 40%;
     text-align: center;
   }
   div.poppUp{
     width: 100%;
     margin: 0;
-    text-align: center;
+  }
+  div.poppUp p{
+    font-weight: bold;
+    font-size: 100%;
   }
   h2{
-    width: 90%;
-    margin:0 5% 0 5%;
+    margin:0 5% 0 0;
+  }
+  br.brPc{
+    display: none;
   }
   hr.infoHr{
     width: 100%;
     margin: 0;
   }
   div.info{
-  word-break: break-all;
     width: 100%;
-    margin-left:5%;
-    font-weight: lighter;
-    font-size: 70%;;
-    line-height: 15px;
+    margin:0 5% 5% 2%;
+    font-size: 100%;
+  }
+  img.taxFree{
+    width: 50%;
+  }
+  div.info p{
+    font-weight: bold;
   }
   div.info a{
-    text-decoration: none;
+    text-decoration: underline;
   }
-  div.info div{
-    padding-left:1em;
-    text-indent:-1em;
-    word-break: break-all;
-  }
-  div.info span{
-    padding-left:1em;
-    text-indent:-1em;
+  span.brSpan{
+    display: inline-block;
   }
 }
-
 /* footer====================================== ============= */
+
 div.footer{
-  display: inline-block;
+  display: block;
   width: 70%;
   margin:0;
   position: relative;
-  left: 30%;
+  left: 10%;
 }
 div.offer{
   width: 70px;
 }
-div.footer div{
+p.offer{
+  width:100%;
+}
+ul.offers{
+  width: 100%;
+  margin: 0;
   overflow: hidden;
-}
-div.footer div.offers{
-  width: 500px;
-  margin: 0;
   display: inline-block;
 }
-div.footer div.supports{
-  width: 550px;
-  margin: 0;
-  display: inline-block;
-}
-div.footer div p{
+ul.offers li{
+  width: 200px;
+  list-style-type: none;
   float: left;
+}
+ul.offers  li p{
+  margin: 0;
   font-size: 25px;
-  font-weight: normal;
-  margin-bottom: 0;
+  position: relative;
+  top:10px;
 }
-div.footer img.serakuOffer{
-  margin-left: 120px;
-}
-div.footer div p.support{
-  margin-top: 40px;
-}
-div.footer img.tokyoSupport1{
-  margin-left: 70px;
-  margin-bottom: 20px;
+ul.offers  li img{
+  width: 200px;
+  display: inline-block;
 }
 ul.footerInfo{
   display: none;
 }
-
 @media (max-width:599px) {
   div.footer{
     display: inline-block;
-    width: 100%;
-    margin:0;
+    width: 70%;
     position: relative;
-    left:0;
+    left: 5%;
+    bottom: 20px;
   }
-  div.offer{
-    width:40%;
+  ul.offers li{
+    width: 70px;
   }
-  div.footer div{
-    overflow: hidden;
+  ul.offers  li p{
+    font-size: 20px;
   }
-  div.footer div.offers{
-    width:40%;
-    margin: 0;
-    display: inline-block;
+  ul.offers  li img{
+    width: 180%;
   }
-  div.footer div.supports{
-    width: 40%;
-    margin: 0;
-    display: inline-block;
-  }
-  div.footer div p{
-    float: left;
-    font-size: 90%;
-    font-weight: normal;
-    margin-bottom: 0;
-  }
-  div.footer img.serakuOffer{
-    width: 10%;
-    height: 10%;
-    margin-left: 0;
-  }
-  div.footer div p.support{
-    margin-top: 0;
-  }
-  div.footer img.tokyoSupport1{
-    width: 10%;
-    height: 10%;
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-  div.footer img.tokyoSupport2{
-    width: 10%;
-    height: 10%;
+  ul.offers li img.tokyoSupport2{
+    position: relative;
+    left: 60px;
   }
   ul.footerInfo{
+    width: 100%;
+    height: 50px;
     display: block;
+    overflow: hidden;
+    margin:0 auto 50px auto;
+  }
+  ul.footerInfo li{
+    font-size: 15px;
+    list-style-type: none;
+    width:40%;
+    float: left;
+  }
+  ul.footerInfo li.footerAdress{
+    width: 80px;
+    text-decoration: underline;
+    border-right:  solid 1px black;
+  }
+  ul.footerInfo li.footerQuestions{
+    width: 100px;
+    text-decoration: underline;
+    border-right:  solid 1px black;
+    padding: 0 20px 0px;
   }
 }
