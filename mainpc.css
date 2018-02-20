@@ -1,209 +1,232 @@
 /* banner ====================================== ============= */
-body{
+
+body {
   width: 100%;
-  background-color: rgb(215,230,240);
+  background-color: rgb(215, 230, 240);
   margin: 0;
 }
-.banners{
+
+.banners {
   width: 80px;
-  float:right;
-  top:200px;
-  right:35px;
+  float: right;
+  top: 200px;
+  right: 35px;
   position: fixed;
 }
-.bannerHr{
+
+.bannerHr {
   display: none;
 }
-.doChange{
+
+.doChange {
   margin: 0;
   font-size: 100%;
 }
-.doSelect{
+
+.doSelect {
   margin: 0;
   font-size: 100%;
 }
+
 @media (max-width:599px) {
-  body{
+  body {
     background-color: white;
   }
-  .banners{
+  .banners {
     width: 100%;
     float: none;
-    top:auto;
+    top: auto;
     right: auto;
-    margin:2% 0 0 2%;
-    position:relative;
+    margin: 2% 0 0 2%;
+    position: relative;
     overflow: hidden;
     background-color: white;
   }
-  .bannerHr{
+  .bannerHr {
     display: block;
-  	width: 100%;
+    width: 100%;
   }
-  .doChange{
+  .doChange {
     font-size: 10%;
     color: red;
     position: relative;
-    bottom:5px;
+    bottom: 5px;
   }
-  .doSelect{
+  .doSelect {
     font-size: 30%;
     color: red;
     position: relative;
     left: 10px;
-    bottom:5px;
+    bottom: 5px;
   }
-  .banners div.bannerContent{
+  .banners div.bannerContent {
     display: inline-block;
-    padding-right:1%;
+    padding-right: 1%;
     position: static;
-    float:left;
+    float: left;
   }
-  .banners div.bannerContent:last-child{
+  .banners div.bannerContent:last-child {
     width: 160px;
   }
-  .banners div.bannerContent img{
-    width:40px;
+  .banners div.bannerContent img {
+    width: 40px;
   }
-  .banners div.bannerContent img.bannerSns{
-    padding-right:5%;
+  .banners div.bannerContent img.bannerSns {
+    padding-right: 5%;
   }
 }
+
 /* header ====================================== ============= */
 
-header{
+header {
   width: 85%;
   background-color: white;
   position: relative;
   display: inline-block;
-  left:6%;
+  left: 6%;
   margin-right: 0;
 }
-.changeLogo{
+
+.changeLogo {
   text-align: right;
   padding: 20px 50px 0 0;
 }
-.headerChar{
-  margin-left:30%;
+
+.headerChar {
+  margin-left: 30%;
 }
+
 @media (max-width:599px) {
-  header{
+  header {
     width: 100%;
-    left:0;
+    left: 0;
     margin: 0;
     background-color: white;
   }
-  div.changeLogo{
+  div.changeLogo {
     padding: 0;
     text-align: justify;
     display: inline-block;
     width: 30%;
-    margin:0;
+    margin: 0;
     position: relative;
     left: 70%;
   }
-  div.changeLogo img{
+  div.changeLogo img {
     width: 40px;
   }
-  img.headerChar{
+  img.headerChar {
     margin: 0;
     width: 65%;
     position: relative;
-    right:27%;
+    right: 27%;
   }
 }
 
 /* graphic ====================================== ============= */
 
-.mainContents{
+.mainContents {
   width: 85%;
   background-color: white;
   position: relative;
   display: inline-block;
-  left:6%;
+  left: 6%;
   margin-right: 0;
 }
-div.graphic{
+
+div.graphic {
   width: 950px;
-  margin:0 auto;
+  margin: 0 auto;
 }
-div.graphic ul{
+
+div.graphic ul {
   margin-bottom: 0;
   position: relative;
-	list-style: none;
-	padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
-div.graphic ul li{
+
+div.graphic ul li {
   list-style-type: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	opacity: 0;
-	transition: opacity 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
-div.graphic ul li.now{
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	opacity: 1;
+
+div.graphic ul li.now {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
 }
-div.graphic ul li img{
+
+div.graphic ul li img {
   width: 950px;
 }
-div.radios{
+
+div.radios {
   text-align: center;
 }
+
 @media (max-width:599px) {
-  .mainContents{
+  .mainContents {
     width: 100%;
-    left:0;
+    left: 0;
     margin: 0;
   }
-  div.graphic{
+  div.graphic {
     width: 100%;
     margin: 0;
   }
-  div.graphic ul li img{
+  div.graphic ul li img {
     width: 100%;
   }
-  div.radios{
+  div.radios {
     text-align: center;
   }
 }
 
 /* My japaneseName ====================================== ============= */
 
-div.japaneseName{
+div.japaneseName {
   text-align: center;
   margin: 0 auto;
 }
-img.japaneseNameLogoSp{
+
+img.japaneseNameLogoSp {
   display: none;
 }
-br.brSp{
+
+br.brSp {
   display: none;
 }
-div.japaneseName p{
+
+div.japaneseName p {
   font-size: 130%;
 }
-#changeBox{
+
+#changeBox {
   width: 90%;
   height: 200px;
   margin-left: 5%;
-  background-color: rgb(215,230,240);
+  background-color: rgb(215, 230, 240);
   text-align: center;
   border-radius: 8px;
 }
-#changeBox div.changeNow{
+
+#changeBox div.changeNow {
   color: red;
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
   padding-top: 30px;
 }
-#changeBox input.textBox{
+
+#changeBox input.textBox {
   width: 300px;
   height: 50px;
   border-radius: 8px;
@@ -211,105 +234,115 @@ div.japaneseName p{
   font-size: 30px;
   opacity: 0.8;
 }
-#changeBox div.textBtn{
+
+#changeBox div.textBtn {
   display: inline-block;
   border-color: red;
   border-radius: 10px;
   background-color: red;
   color: white;
-  height:55px;
+  height: 55px;
   width: 100px;
   line-height: 60px;
   font-family: serif;
   font-size: 20px;
 }
-img.noboruAyumu{
+
+img.noboruAyumu {
   margin-left: 5%;
 }
+
 @media (max-width:599px) {
-  div.japaneseName{
+  div.japaneseName {
     width: 100%;
   }
-  br.brSp{
+  br.brSp {
     display: block;
   }
-  img.japaneseNameLogo{
+  img.japaneseNameLogo {
     display: none;
   }
-  div.japaneseName p{
+  div.japaneseName p {
     font-size: 100%;
   }
-  img.japaneseNameLogoSp{
+  img.japaneseNameLogoSp {
     width: 90%;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  img.noboruAyumu{
+  img.noboruAyumu {
     margin-left: 5%;
     width: 30%;
   }
-  img.kanauYume{
+  img.kanauYume {
     width: 40%;
   }
-  #changeBox{
+  #changeBox {
     width: 100%;
     height: 140px;
     margin-left: 0%;
     border-radius: 0px;
   }
-  #changeBox input.textBox{
+  #changeBox input.textBox {
     width: 50%;
     height: 50%;
   }
-  #changeBox div.textBtn{
-    height:40px;
+  #changeBox div.textBtn {
+    height: 40px;
     line-height: 50px;
     font-size: 20px;
   }
-  #changeBox div.positioning{
+  #changeBox div.positioning {
     position: relative;
     bottom: 5%;
   }
 }
+
 /* STEPS====================================== ============= */
 
 h1 {
   border-top: 4px solid #FF0000;
-  margin:0 auto;
-  text-align:center;
-  padding:0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
   width: 90%;
-  height:24px;
+  height: 24px;
 }
+
 h1 span {
   position: relative;
   top: -35px;
   padding: 0 10px;
   color: #FF0000;
   font-size: 50px;
-  background:white;
+  background: white;
 }
-p.useStep{
+
+p.useStep {
   position: relative;
-  top:-20px;
+  top: -20px;
   text-align: center;
   margin-top: 15px;
-  color: rgb(225,200,0);
+  color: rgb(225, 200, 0);
 }
-div.stepsAll{
-  margin:0 auto;
+
+div.stepsAll {
+  margin: 0 auto;
   width: 95%;
 }
-div.making>img{
+
+div.making>img {
   margin-left: 15px;
 }
-.illust{
+
+.illust {
   float: left;
   overflow: hidden;
 }
-#makeBox{
+
+#makeBox {
   overflow: hidden;
-  margin:30px 0 0 20px;
+  margin: 30px 0 0 20px;
   width: 590px;
   height: 70px;
   background-color: #FF0000;
@@ -319,13 +352,15 @@ div.making>img{
   color: #FFFFFF;
   font-size: 200%;
 }
-ul.navi1{
+
+ul.navi1 {
   width: 95%;
-  margin:0;
+  margin: 0;
   overflow: hidden;
   padding-left: 20px;
 }
-ul.navi1 li{
+
+ul.navi1 li {
   background-color: white;
   text-align: center;
   float: right;
@@ -338,46 +373,55 @@ ul.navi1 li{
   color: #FF0000;
   font-size: 180%;
 }
-ul.navi1 li:hover{
+
+ul.navi1 li:hover {
   background-color: red;
   color: white;
 }
-ul.navi1 li.active1{
+
+ul.navi1 li.active1 {
   border: solid 2px red;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-ul.navi1 li.active2{
+
+ul.navi1 li.active2 {
   border-top: solid 2px red;
   border-bottom: solid 2px red;
 }
-ul.navi1 li.active3{
+
+ul.navi1 li.active3 {
   border: solid 2px red;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-div.slide2{
+
+div.slide2 {
   width: 90%;
   height: 400px;
   margin: 20px 0 0 5%;
   display: inline-block;
-  background-image:url(imgspc/kind.png);
+  background-image: url(imgspc/kind.png);
   background-position: 689px 20px;
   background-repeat: no-repeat;
 }
-img.leftTab{
+
+img.leftTab {
   display: inline;
   vertical-align: 120px;
   margin-right: 5px;
 }
-img.rightTab{
+
+img.rightTab {
   display: inline;
   vertical-align: 120px;
   margin-left: 245px;
 }
-p.spSelectImage{
+
+p.spSelectImage {
   display: none;
 }
+
 @media (max-width:599px) {
   h1 {
     width: 100%;
@@ -388,253 +432,274 @@ p.spSelectImage{
     color: #FF0000;
     font-size: 40px;
   }
-  div.stepsAll{
-    margin:0;
+  div.stepsAll {
+    margin: 0;
     width: 100%;
     position: relative;
     bottom: 10px;
   }
-  p.useStep{
+  p.useStep {
     margin-bottom: 0;
   }
-  div.making>img{
+  div.making>img {
     width: 30%;
-    margin-left:1%;
+    margin-left: 1%;
   }
-  .illust{
+  .illust {
     display: none;
   }
-  #makeBox{
-    margin:0 auto;
+  #makeBox {
+    margin: 0 auto;
     width: 95%;
     font-size: 140%;
   }
-  div.positioning2{
+  div.positioning2 {
     position: relative;
     right: 5%;
   }
-  ul.navi1{
+  ul.navi1 {
     width: 100%;
     padding-left: 0;
   }
-  ul.navi1 li{
+  ul.navi1 li {
     margin-top: 0;
     width: 30%;
     font-size: 100%;
   }
-  ul.navi1 li.active1{
+  ul.navi1 li.active1 {
     border-bottom-right-radius: 0;
   }
-  ul.navi1 li.active3{
-    border-bottom-left-radius:0;
+  ul.navi1 li.active3 {
+    border-bottom-left-radius: 0;
   }
-  div.slide2{
+  div.slide2 {
     width: 100%;
     height: 10%;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
     left: 2%;
   }
-  img.kindbox{
+  img.kindbox {
     width: 80%;
     vertical-align: middle;
   }
-  img.leftTab{
+  img.leftTab {
     width: 5%;
     vertical-align: middle;
   }
-  img.rightTab{
+  img.rightTab {
     width: 5%;
     vertical-align: middle;
     margin: 0;
   }
-  p.spSelectImage{
+  p.spSelectImage {
     display: inline-block;
     font-size: 110%;
-    margin:0 5% 10% 15%;
+    margin: 0 5% 10% 15%;
     text-align: center;
   }
 }
+
 /* OPEN SERVICE====================================== ============= */
 
-div.positioning3{
+div.positioning3 {
   position: relative;
   bottom: 30px;
 }
-div.poppUp{
+
+div.poppUp {
   width: 70%;
   margin: 0 auto 50px auto;
   text-align: center;
   position: relative;
   bottom: 40px;
 }
-div.poppUp p{
+
+div.poppUp p {
   width: 100%;
   font-size: 120%;
 }
-div.poppUp small{
+
+div.poppUp small {
   font-size: small;
   font-weight: normal;
 }
-h2{
+
+h2 {
   width: 90%;
-  margin:0 5% 0 5%;
+  margin: 0 5% 0 5%;
 }
-hr.infoHr{
+
+hr.infoHr {
   width: 90%;
   margin: 0 5% 30px 5%;
 }
-div.info{
+
+div.info {
   width: 70%;
   margin: 0 10% 40px 8%;
   font-weight: lighter;
   font-size: 110%;
 }
-div.info a{
+
+div.info a {
   text-decoration: none;
 }
-div.info div{
-  padding-left:1em;
-  text-indent:-1em;
+
+div.info div {
+  padding-left: 1em;
+  text-indent: -1em;
 }
-div.info span{
-  padding-left:1em;
-  text-indent:-1em;
+
+div.info span {
+  padding-left: 1em;
+  text-indent: -1em;
 }
-span.brSpan{
+
+span.brSpan {
   display: none;
 }
+
 @media (max-width:599px) {
-  img.popLogo1{
+  img.popLogo1 {
     width: 20%;
     text-align: center;
   }
-  img.popLogo2{
+  img.popLogo2 {
     width: 80%;
     text-align: center;
   }
-  img.popLogo3{
+  img.popLogo3 {
     width: 40%;
     text-align: center;
   }
-  div.poppUp{
+  div.poppUp {
     width: 100%;
     margin: 0;
   }
-  div.poppUp p{
+  div.poppUp p {
     font-weight: bold;
     font-size: 100%;
   }
-  h2{
-    margin:0 5% 0 0;
+  h2 {
+    margin: 0 5% 0 0;
   }
-  br.brPc{
+  br.brPc {
     display: none;
   }
-  hr.infoHr{
+  hr.infoHr {
     width: 100%;
     margin: 0;
   }
-  div.info{
+  div.info {
     width: 100%;
-    margin:0 5% 5% 2%;
+    margin: 0 5% 5% 2%;
     font-size: 100%;
   }
-  img.taxFree{
+  img.taxFree {
     width: 50%;
   }
-  div.info p{
+  div.info p {
     font-weight: bold;
   }
-  div.info a{
+  div.info a {
     text-decoration: underline;
   }
-  span.brSpan{
+  span.brSpan {
     display: inline-block;
   }
 }
+
 /* footer====================================== ============= */
 
-div.footer{
+div.footer {
   display: block;
   width: 70%;
-  margin:0;
+  margin: 0;
   position: relative;
   left: 10%;
 }
-div.offer{
+
+div.offer {
   width: 70px;
 }
-p.offer{
-  width:100%;
+
+p.offer {
+  width: 100%;
 }
-ul.offers{
+
+ul.offers {
   width: 100%;
   margin: 0;
   overflow: hidden;
   display: inline-block;
 }
-ul.offers li{
+
+ul.offers li {
   width: 200px;
   list-style-type: none;
   float: left;
 }
-ul.offers  li p{
+
+ul.offers li p {
   margin: 0;
   font-size: 25px;
   position: relative;
-  top:10px;
+  top: 10px;
 }
-ul.offers  li img{
+
+ul.offers li img {
   width: 200px;
   display: inline-block;
 }
-ul.footerInfo{
+
+ul.footerInfo {
   display: none;
 }
+
 @media (max-width:599px) {
-  div.footer{
+  div.footer {
     display: inline-block;
     width: 70%;
     position: relative;
     left: 5%;
     bottom: 20px;
   }
-  ul.offers li{
+  ul.offers li {
     width: 70px;
   }
-  ul.offers  li p{
+  ul.offers li p {
     font-size: 20px;
   }
-  ul.offers  li img{
+  ul.offers li img {
     width: 180%;
   }
-  ul.offers li img.tokyoSupport2{
+  ul.offers li img.tokyoSupport2 {
     position: relative;
     left: 60px;
   }
-  ul.footerInfo{
+  ul.footerInfo {
     width: 100%;
     height: 50px;
     display: block;
     overflow: hidden;
-    margin:0 auto 50px auto;
+    margin: 0 auto 50px auto;
   }
-  ul.footerInfo li{
+  ul.footerInfo li {
     font-size: 15px;
     list-style-type: none;
-    width:40%;
+    width: 40%;
     float: left;
   }
-  ul.footerInfo li.footerAdress{
+  ul.footerInfo li.footerAdress {
     width: 80px;
     text-decoration: underline;
-    border-right:  solid 1px black;
+    border-right: solid 1px black;
   }
-  ul.footerInfo li.footerQuestions{
+  ul.footerInfo li.footerQuestions {
     width: 100px;
     text-decoration: underline;
-    border-right:  solid 1px black;
+    border-right: solid 1px black;
     padding: 0 20px 0px;
   }
 }
